@@ -1,0 +1,234 @@
+Screen1 As screen:
+    BackgroundImage: =
+    Fill: =RGBA(0, 0, 0, 1)
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(215, 223, 240, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =25
+        Text: ="Contador de Operaciones"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Button1 As button:
+        Height: =70
+        OnSelect: =Set(hipotec, If(hipotec > 0, hipotec - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =308
+        Y: =147
+        ZIndex: =3
+
+    Button2 As button:
+        Height: =70
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =308
+        Y: =245
+        ZIndex: =4
+
+    TextInput1 As text:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =hipotec
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Format: =TextFormat.Number
+        Height: =70
+        HintText: ="0"
+        OnChange: =Set(hipotec, Value(TextInput1.Text))
+        Size: =21
+        Width: =87
+        X: =388
+        Y: =147
+        ZIndex: =5
+
+    TextInput2 As text:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Format: =TextFormat.Number
+        Height: =70
+        HintText: ="0"
+        OnChange: =Set(tarjetas, Value(TextInput2.Text))
+        Size: =21
+        Width: =87
+        X: =388
+        Y: =245
+        ZIndex: =6
+
+    Button3 As button:
+        Height: =70
+        OnSelect: =Set(hipotec, hipotec + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =484
+        Y: =147
+        ZIndex: =7
+
+    Button4 As button:
+        Height: =70
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =484
+        Y: =245
+        ZIndex: =8
+
+    Label2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =70
+        Size: =21
+        Text: ="Hipotecarios"
+        Width: =256
+        X: =40
+        Y: =147
+        ZIndex: =9
+
+    Label2_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =70
+        Size: =21
+        Text: ="Tarjetas"
+        Width: =256
+        X: =40
+        Y: =245
+        ZIndex: =10
+
+    TextInput3 As text:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =Value(TextInput1.Text) + Value(TextInput2.Text)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Format: =TextFormat.Number
+        Height: =63
+        OnChange: =
+        Size: =21
+        Width: =96
+        X: =354
+        Y: =357
+        ZIndex: =11
+
+    Label3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 94, 146, 1)
+        Height: =67
+        Size: =21
+        Text: ="Total Operaciones"
+        Width: =298
+        X: =40
+        Y: =353
+        ZIndex: =12
+
+    Label3_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 94, 146, 1)
+        Height: =67
+        Size: =21
+        Text: ="Tiempo Total"
+        Width: =298
+        X: =40
+        Y: =436
+        ZIndex: =13
+
+    TextInput3_1 As text:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =Int(Value(TextInput4.Text) + Value(TextInput5.Text))
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Format: =TextFormat.Number
+        Height: =67
+        OnChange: =
+        Size: =21
+        Width: =67
+        X: =354
+        Y: =436
+        ZIndex: =14
+
+    TextInput4 As text:
+        Align: =Align.Center
+        Default: =Value(TextInput2.Text) * 3 / 60
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Format: =TextFormat.Number
+        Height: =34
+        Size: =15
+        Width: =33
+        X: =554
+        Y: =263
+        ZIndex: =16
+
+    TextInput5 As text:
+        Align: =Align.Center
+        Default: =((Value(TextInput1.Text) * 3) / 60)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =32
+        Size: =21
+        Width: =33
+        X: =554
+        Y: =166
+        ZIndex: =17
+
+    TextInput3_3 As text:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Default: |-
+            =Right(Text((Value(TextInput4.Text) + Value(TextInput5.Text)), "#.00"), 2) * 0.6
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        Format: =TextFormat.Number
+        Height: =67
+        OnChange: =
+        Size: =21
+        Width: =67
+        X: =443
+        Y: =436
+        ZIndex: =21
+
+    Label10 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =67
+        Size: =21
+        Text: |-
+            =":"
+        Width: =18
+        X: =423
+        Y: =436
+        ZIndex: =22
+
+    Button5 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(116, 116, 116, 1)
+        Height: =70
+        OnSelect: =Set(hipotec, If(hipotec > 0, 0)) && Set(tarjetas, If(tarjetas > 0, 0))
+        Size: =24
+        Text: ="Reset"
+        Width: =131
+        X: =423
+        Y: =577
+        ZIndex: =23
+

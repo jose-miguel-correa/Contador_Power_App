@@ -1,0 +1,5 @@
+App As appinfo:
+    BackEnabled: =false
+    ConfirmExit: =true
+    ConfirmExitMessage: ="Gracias por preferirnos!"
+
