@@ -28,7 +28,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/12/2022 20:06:39",
+  "HeaderLastSavedDateTimeUTC": "12/15/2022 20:28:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -36,7 +36,7 @@
     "night-sky": "56760d5d-29d0-4863-b101-cc12df34874d.jpg"
   },
   "LocalResourceRootPaths": {
-    "night-sky": "https://docserverpwaprodwus.blob.core.windows.net/99709c29-f653-417a-8d7d-3ae911f17e9c-1/resource/Assets0Images056760d5d-29d0-4863-b101-cc12df34874d.jpg?sv=2017-04-17&sr=b&sig=GoZx7dbmwx5EpDBgWkcuFniL9a7nj01FUMkglBmgO9o%3D&spr=https&se=2022-12-13T15%3A49%3A00Z&sp=r"
+    "night-sky": "https://docserverpwaprodwus.blob.core.windows.net/29009f1c-9846-4f31-b9dc-cb83f5190436-1/resource/Assets0Images056760d5d-29d0-4863-b101-cc12df34874d.jpg?sv=2017-04-17&sr=b&sig=9MjqfiTzF8omDucDkDS%2B2Nj7Uk0cZsqMqhvmFonnuoo%3D&spr=https&se=2022-12-16T20%3A40%3A35Z&sp=r"
   },
   "OrderComponentMetadata": {
     "3c9b5b0d5a3742e08eb9efe63dee013f": 0
@@ -82,7 +82,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.2106122,
+    "AnalysisLoadTime": 0.1997689,
     "ControlCount": {
       "3c9b5b0d5a3742e08eb9efe63dee013f": 1,
       "button": 5,
@@ -90,7 +90,7 @@
       "screen": 1,
       "text": 7
     },
-    "DeserializationLoadTime": 1.7116746,
+    "DeserializationLoadTime": 3.7311789,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

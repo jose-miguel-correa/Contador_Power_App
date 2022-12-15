@@ -1,5 +1,6 @@
 Screen1 As screen:
     BackgroundImage: =
+    Fill: =RGBA(0, 0, 0, 1)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     Label1 As label:
