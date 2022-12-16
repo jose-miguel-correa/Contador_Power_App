@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr77c_carrerases",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr77c_carreras",
+    "Name": "Carreras",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Propietario",
+      "aps_aps_solicituddeproyecto_cr77c_carreras": "Solicitudes de Proyecto",
+      "aps_facultadareaoinstituto": "Facultad, área o instituto",
+      "cr77c_carreras": "Carrera",
+      "cr77c_carreras_AsyncOperations": "Trabajos del sistema",
+      "cr77c_carreras_BulkDeleteFailures": "Errores de eliminación en masa",
+      "cr77c_carreras_DuplicateBaseRecord": "Registros duplicados (cr77c_carreras_DuplicateBaseRecord)",
+      "cr77c_carreras_DuplicateMatchingRecord": "Registros duplicados (cr77c_carreras_DuplicateMatchingRecord)",
+      "cr77c_carreras_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "cr77c_carreras_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "cr77c_carreras_ProcessSession": "Sesiones de proceso",
+      "cr77c_carreras_SyncErrors": "Errores de sincronización",
+      "cr77c_carrerasid": "Carreras",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "owningbusinessunit": "Unidad de negocio propietaria",
+      "owningteam": "Equipo propietario",
+      "owninguser": "Usuario propietario",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "Carreras",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Carreras (Views)",
+    "Name": "_cr77c_carreras_views",
+    "RelatedEntityName": "Carreras",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "049c02fe-ee9f-4d9c-9ac2-60bb9d8b9816": "Carreras inactivo",
+      "053bbd10-3a3e-4fed-a091-699f5eaa7523": "Carreras activo",
+      "0b271e97-aedf-4f55-ac31-f005613279c3": "Vista de búsqueda avanzada de Carreras",
+      "86c1221a-115d-40d9-b6c5-2e2c4cb4e5e4": "Vista asociada de Carreras",
+      "e9512b97-a420-467d-9ecc-ef1a84a4d796": "Vista de búsqueda de Carreras"
+    }
+  },
+  {
+    "DisplayName": "Estado (Carreras)",
+    "Name": "cr77c_carreras_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Carreras"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Carreras",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (Carreras)",
+    "Name": "cr77c_carreras_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Carreras"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Carreras",
+    "Type": "OptionSetInfo"
+  }
+]

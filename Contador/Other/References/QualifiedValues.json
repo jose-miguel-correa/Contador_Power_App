@@ -6,6 +6,26 @@
       "Values": {
         "Información": "f4caa185-2f36-4416-91b7-cd9e8eeee2c4"
       }
+    },
+    {
+      "Kind": "default.cds_activitypointer_forms",
+      "Namespace": "Actividades (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_sharepointsite_forms",
+      "Namespace": "Sitios de SharePoint (Forms)",
+      "Values": {
+        "Información": "ba6522af-e71b-df11-aa01-00155d2a9006"
+      }
+    },
+    {
+      "Kind": "default.cds_cr77c_carreras_forms",
+      "Namespace": "Carreras (Forms)",
+      "Values": {
+        "Información": "7048e822-1e8b-4730-bcc0-80fa044b796e",
+        "Nuevo formulario": "15170ed6-339f-4f21-87b5-2ccb3e498b14"
+      }
     }
   ]
 }

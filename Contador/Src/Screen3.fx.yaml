@@ -1,0 +1,77 @@
+Screen3 As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    DataTable5 As dataTable.datatable:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(100, 118, 132, 1)
+        HeadingFont: =Font.'Open Sans'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =21
+        Height: =500
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, .2)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =operaciones
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(100, 118, 132, 1)
+        PrimaryColor2: =RGBA(32, 54, 71, 1)
+        PrimaryColor3: =RGBA(205, 209, 213, 1)
+        SelectedColor: =RGBA(0, 0, 0, 1)
+        SelectedFill: =RGBA(100, 118, 132, .2)
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =40
+        ZIndex: =1
+
+        fecha_Column5 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="fecha"
+            FieldName: ="fecha"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.fecha
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        hora_Column5 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="hora"
+            FieldName: ="hora"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.hora
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        minutos_Column3 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="minutos"
+            FieldName: ="minutos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.minutos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+

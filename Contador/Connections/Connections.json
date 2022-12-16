@@ -1,1 +1,52 @@
-{}
+{
+  "3042eae3-25a9-4d09-9042-191838fb6888": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1600/1.0.1600.3026/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {
+      "groups%252Fddaa1732-da23-48d2-9d0d-d3ca3d81e2ef,b%2521814KKQOwEUq8rPuSP-d3LAMS3zovZJdEp_pcBwzJiVNZ0D72hH7WRpK_XhExAvMh,01FGKHJYMDU5G4VOHEYBCKVHCBL4Z5VXCC": {
+        "dataSources": {
+          "Tabla1": {
+            "tableName": "{5319E93F-3E0A-4F7A-8106-D37277D70B0A}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Tabla1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3042eae3-25a9-4d09-9042-191838fb6888"
+  },
+  "e02b6852-de81-43ef-8daf-4f992c16e467": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610-greyhound-localization-RelayFix/1.0.1610.3091/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://eduudla-my.sharepoint.com/personal/157123335_academicos_uamericas_cl": {
+        "dataSources": {
+          "operaciones": {
+            "tableName": "cc88f826-40e4-4b92-8396-4c4554bb7a32"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "operaciones"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "e02b6852-de81-43ef-8daf-4f992c16e467"
+  }
+}
