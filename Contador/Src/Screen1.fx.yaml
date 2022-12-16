@@ -373,10 +373,10 @@ Screen1 As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Collect(data, 
-            {fecha:Text(Today(), "dd/mm/yyyy")},
-            {hora:TextInput3_1},
-            {minutos:TextInput3_3}
+            =Collect(datos2, 
+            {Title:""},
+            {hora:TextInput3_1.Text},
+            {minutos:TextInput3_3.Text}
             )
         Size: =24
         Text: ="Guardar"
@@ -394,7 +394,7 @@ Screen1 As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Collect(operaciones, data)
+        OnSelect: =Collect(operaciones, datos2)
         Size: =24
         Text: ="Exportar"
         Width: =232

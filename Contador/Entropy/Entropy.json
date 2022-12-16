@@ -35,7 +35,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/16/2022 17:29:06",
+  "HeaderLastSavedDateTimeUTC": "12/16/2022 17:36:52",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3042eae3-25a9-4d09-9042-191838fb6888": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1c18db0faead4a1cb2b91757e929db63\"",
@@ -60,7 +60,7 @@
     "Carreras\\cr77c_carreras_statuscode": 0,
     "Carreras\\default.cds_cr77c_carreras_views": 12,
     "CustomGallerySample": 13,
-    "data": 19,
+    "datos2": 19,
     "ListboxSample": 15,
     "operaciones": 18,
     "Sitios de SharePoint": 17,
@@ -130,7 +130,7 @@
       "text": 7
     },
     "DeserializationLoadTime": 4.9288549,
-    "ErrorCount": 2
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
