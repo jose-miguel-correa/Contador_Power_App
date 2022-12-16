@@ -16,12 +16,12 @@ Screen3 As screen:
         HeadingFont: =Font.'Open Sans'
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =21
-        Height: =500
+        Height: =177
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, .2)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: =operaciones_1
+        Items: =operaciones_2
         LinkColor: =RGBA(0, 134, 208, 1)
         PrimaryColor1: =RGBA(100, 118, 132, 1)
         PrimaryColor2: =RGBA(32, 54, 71, 1)
@@ -34,7 +34,7 @@ Screen3 As screen:
         Y: =40
         ZIndex: =1
 
-        fecha_Column7 As dataTableColumn.textualColumn:
+        fecha_Column8 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="fecha"
             FieldName: ="fecha"
@@ -44,11 +44,11 @@ Screen3 As screen:
             Order: =1
             Text: =ThisItem.fecha
             Width: =100
-            X: =0
+            X: =320
             Y: =0
             ZIndex: =1
 
-        hora_Column7 As dataTableColumn.textualColumn:
+        hora_Column8 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="hora"
             FieldName: ="hora"
@@ -62,17 +62,116 @@ Screen3 As screen:
             Y: =0
             ZIndex: =2
 
-        minutos_Column5 As dataTableColumn.textualColumn:
+        id_Column1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="id"
+            FieldName: ="id"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.id
+            Width: =100
+            X: =24
+            Y: =0
+            ZIndex: =3
+
+        minutos_Column6 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="minutos"
             FieldName: ="minutos"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =3
+            Order: =4
             Text: =ThisItem.minutos
             Width: =100
             X: =0
             Y: =0
+            ZIndex: =4
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =356
+        Items: =datitos
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =186
+        ZIndex: =2
+
+        Image4 As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title4 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.hora
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image4.Width - 104
+            X: =Image4.X + Image4.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle4 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.minutos
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title4.Width
+            X: =Title4.X
+            Y: =Title4.Y + Title4.Height + 4
             ZIndex: =3
+
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator4 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 

@@ -49,7 +49,7 @@
     "dependents": [],
     "id": "45780420-0b70-4cd6-9282-14f913d1790c"
   },
-  "47394495-a7b7-4210-903a-b5c84df0d6d1": {
+  "7a0ad342-1479-4853-9ed9-3033cbc89f26": {
     "connectionParameters": {
       "database": "josemi-correa",
       "server": "baseoperaciones.database.windows.net"
@@ -59,23 +59,23 @@
       "displayName": "SQL Server",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/release/1609-sql-greyhound/1.0.1609.3089/sql/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sql",
-      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/e9a912f354f14319ab1ed1e6ddf50aa2"
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/f8e2eb8b3a224d649aeeda6323c51453"
     },
     "datasets": {
       "baseoperaciones.database.windows.net,josemi-correa": {
         "dataSources": {
-          "operaciones_1": {
+          "operaciones_2": {
             "tableName": "[dbo].[operaciones]"
           }
         }
       }
     },
     "dataSources": [
-      "operaciones_1"
+      "operaciones_2"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "47394495-a7b7-4210-903a-b5c84df0d6d1"
+    "id": "7a0ad342-1479-4853-9ed9-3033cbc89f26"
   },
   "e02b6852-de81-43ef-8daf-4f992c16e467": {
     "connectionParameters": {

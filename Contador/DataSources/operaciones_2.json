@@ -7,16 +7,16 @@
       "RevisionNumber": 2
     },
     "ConnectedDataSourceInfoNameMapping": {
-      "57dfb1b5-7d79-4046-a4da-fd831d5befe1-KeyId": "KeyId",
       "fecha": "fecha",
       "hora": "hora",
+      "id": "id",
       "minutos": "minutos"
     },
     "DatasetName": "baseoperaciones.database.windows.net,josemi-correa",
     "EncodeDataset": false,
     "IsSampleData": false,
-    "IsWritable": false,
-    "Name": "operaciones_1",
+    "IsWritable": true,
+    "Name": "operaciones_2",
     "Type": "ConnectedDataSourceInfo"
   }
 ]
