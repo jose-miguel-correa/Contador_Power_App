@@ -14,26 +14,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Button6.OnSelect"
+                  "fullyQualifiedName": "Screen1.Button6_1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Button6.OnSelect",
+                  "fullyQualifiedName": "Screen1.Button6_1.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 87,
+                  "charLength": 26,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Collect(operaciones, \r\n{fecha:Label5},\r\n{hora:TextInput3_1},\r\n{minutos:TextInput3_3}\r\n)"
+                    "text": "Collect(operaciones, data)"
                   }
                 }
               },
               "properties": {
                 "member": "OnSelect",
                 "module": "Screen1",
-                "type": "Screen1.Button6"
+                "type": "Screen1.Button6_1"
               }
             }
           ],
@@ -54,26 +54,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Button6.OnSelect"
+                  "fullyQualifiedName": "Screen1.Button6_1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Button6.OnSelect",
+                  "fullyQualifiedName": "Screen1.Button6_1.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 23,
+                  "charLength": 4,
+                  "charOffset": 21,
                   "snippet": {
-                    "text": "{fecha:Label5}"
+                    "text": "data"
                   }
                 }
               },
               "properties": {
                 "member": "OnSelect",
                 "module": "Screen1",
-                "type": "Screen1.Button6"
+                "type": "Screen1.Button6_1"
               }
             }
           ],
@@ -81,7 +81,7 @@
             "arguments": [
               "fecha",
               "Date",
-              "Control"
+              "DateTime"
             ],
             "id": "issue"
           },

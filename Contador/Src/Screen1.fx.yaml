@@ -363,21 +363,6 @@ Screen1 As screen:
         Y: =629
         ZIndex: =23
 
-    Label5 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(0, 121, 187, 1)
-        Height: =32
-        Size: =15
-        Text: =Text(Today(), "dd/mm/yyyy")
-        Width: =124
-        X: =475
-        Y: =137
-        ZIndex: =24
-
     Button6 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -388,8 +373,8 @@ Screen1 As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Collect(operaciones, 
-            {fecha:Label5},
+            =Collect(data, 
+            {fecha:Now()},
             {hora:TextInput3_1},
             {minutos:TextInput3_3}
             )
@@ -397,6 +382,23 @@ Screen1 As screen:
         Text: ="Guardar"
         Width: =232
         X: =40
-        Y: =629
+        Y: =586
         ZIndex: =25
+
+    Button6_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Collect(operaciones, data)
+        Size: =24
+        Text: ="Exportar"
+        Width: =232
+        X: =40
+        Y: =677
+        ZIndex: =26
 
