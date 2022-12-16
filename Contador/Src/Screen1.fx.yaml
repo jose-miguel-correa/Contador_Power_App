@@ -374,7 +374,7 @@ Screen1 As screen:
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =Collect(data, 
-            {fecha:Now()},
+            {fecha:Text(Today(), "dd/mm/yyyy")},
             {hora:TextInput3_1},
             {minutos:TextInput3_3}
             )

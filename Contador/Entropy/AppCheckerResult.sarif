@@ -81,7 +81,7 @@
             "arguments": [
               "fecha",
               "Date",
-              "DateTime"
+              "Text"
             ],
             "id": "issue"
           },
