@@ -1,7 +1,8 @@
 Screen3 As screen:
+    Fill: =RGBA(255,255,255,1)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    DataTable5 As dataTable.datatable:
+    DataTable6 As dataTable.datatable:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderStyle: =BorderStyle.Solid
         Color: =RGBA(0, 0, 0, 1)
@@ -20,7 +21,7 @@ Screen3 As screen:
         HoverFill: =RGBA(205, 209, 213, .2)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: =operaciones
+        Items: =operaciones_1
         LinkColor: =RGBA(0, 134, 208, 1)
         PrimaryColor1: =RGBA(100, 118, 132, 1)
         PrimaryColor2: =RGBA(32, 54, 71, 1)
@@ -33,45 +34,45 @@ Screen3 As screen:
         Y: =40
         ZIndex: =1
 
-        fecha_Column5 As dataTableColumn.textualColumn:
+        fecha_Column7 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="fecha"
             FieldName: ="fecha"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =2
+            Order: =1
             Text: =ThisItem.fecha
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =2
+            ZIndex: =1
 
-        hora_Column5 As dataTableColumn.textualColumn:
+        hora_Column7 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="hora"
             FieldName: ="hora"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =3
+            Order: =2
             Text: =ThisItem.hora
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =3
+            ZIndex: =2
 
-        minutos_Column3 As dataTableColumn.textualColumn:
+        minutos_Column5 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="minutos"
             FieldName: ="minutos"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =4
+            Order: =3
             Text: =ThisItem.minutos
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =4
+            ZIndex: =3
 

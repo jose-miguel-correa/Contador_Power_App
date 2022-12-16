@@ -24,6 +24,59 @@
     "dependents": [],
     "id": "3042eae3-25a9-4d09-9042-191838fb6888"
   },
+  "45780420-0b70-4cd6-9282-14f913d1790c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610-greyhound-localization-RelayFix/1.0.1610.3091/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://eduudla.sharepoint.com/sites/Fotografa": {
+        "dataSources": {
+          "op": {
+            "tableName": "b14db565-210f-4a30-a16b-47fbc25ad0e4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "op"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "45780420-0b70-4cd6-9282-14f913d1790c"
+  },
+  "47394495-a7b7-4210-903a-b5c84df0d6d1": {
+    "connectionParameters": {
+      "database": "josemi-correa",
+      "server": "baseoperaciones.database.windows.net"
+    },
+    "connectionRef": {
+      "authenticationType": "sqlAuthentication",
+      "displayName": "SQL Server",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/release/1609-sql-greyhound/1.0.1609.3089/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/e9a912f354f14319ab1ed1e6ddf50aa2"
+    },
+    "datasets": {
+      "baseoperaciones.database.windows.net,josemi-correa": {
+        "dataSources": {
+          "operaciones_1": {
+            "tableName": "[dbo].[operaciones]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "operaciones_1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "47394495-a7b7-4210-903a-b5c84df0d6d1"
+  },
   "e02b6852-de81-43ef-8daf-4f992c16e467": {
     "connectionParameters": {
       "sku": "Enterprise"
