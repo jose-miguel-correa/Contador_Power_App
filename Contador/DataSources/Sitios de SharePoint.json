@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "sharepointsite",
+    "MaxGetRowsCount": 500,
     "Name": "Sitios de SharePoint",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Propietario",

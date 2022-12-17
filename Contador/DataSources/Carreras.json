@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr77c_carreras",
+    "MaxGetRowsCount": 500,
     "Name": "Carreras",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Propietario",

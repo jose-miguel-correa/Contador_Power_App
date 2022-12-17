@@ -376,8 +376,8 @@ Screen1 As screen:
         OnSelect: |-
             =Collect(data, 
             {fecha: Today()},
-            {hora:TextInput3_1.Text},
-            {minutos:TextInput3_3.Text}
+            {hora:TextInput3_1},
+            {minutos:TextInput3_3}
             )
         Size: =19
         Text: ="Guardar"
