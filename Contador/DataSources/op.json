@@ -1,0 +1,46 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-11-09T20:26:04.5150000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Miniatura",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Creado por",
+      "Author#Claims": "Creado por Claims",
+      "ComplianceAssetId": "Id. de activo de cumplimiento normativo",
+      "Created": "Creado",
+      "Editor": "Modificado por",
+      "Editor#Claims": "Modificado por Claims",
+      "fecha": "fecha",
+      "hora": "hora",
+      "ID": "ID",
+      "minutos": "minutos",
+      "Modified": "Modificado",
+      "Title": "Title"
+    },
+    "DatasetName": "https://eduudla.sharepoint.com/sites/Fotografa",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "op",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

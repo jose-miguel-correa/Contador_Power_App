@@ -1,6 +1,6 @@
 {
   "ComponentIndexes": {
-    "Component1": 1
+    "Component1": 2
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -10,7 +10,11 @@
     "Button3": 9,
     "Button4": 14,
     "Button5": 22,
+    "Button6": 41,
+    "Button6_1": 90,
+    "Button6_2": 119,
     "Component1": 3,
+    "FormViewer1": 120,
     "Label1": 5,
     "Label10": 20,
     "Label2": 6,
@@ -18,6 +22,7 @@
     "Label3": 16,
     "Label3_1": 18,
     "Screen1": 4,
+    "Screen3": 42,
     "TextInput1": 8,
     "TextInput2": 13,
     "TextInput3": 17,
@@ -28,15 +33,20 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/12/2022 20:06:39",
+  "HeaderLastSavedDateTimeUTC": "12/17/2022 02:40:45",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "3042eae3-25a9-4d09-9042-191838fb6888": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1c18db0faead4a1cb2b91757e929db63\"",
+    "45780420-0b70-4cd6-9282-14f913d1790c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0faa1bbf087049ebbcb764100b860610\"",
+    "7a0ad342-1479-4853-9ed9-3033cbc89f26": "\"/providers/microsoft.powerapps/apis/shared_sql/connections/f8e2eb8b3a224d649aeeda6323c51453\"",
+    "e02b6852-de81-43ef-8daf-4f992c16e467": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/734fdc3aac954000a7fe7c1a584bd425\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "night-sky": "56760d5d-29d0-4863-b101-cc12df34874d.jpg"
   },
   "LocalResourceRootPaths": {
-    "night-sky": "https://docserverpwaprodwus.blob.core.windows.net/99709c29-f653-417a-8d7d-3ae911f17e9c-1/resource/Assets0Images056760d5d-29d0-4863-b101-cc12df34874d.jpg?sv=2017-04-17&sr=b&sig=GoZx7dbmwx5EpDBgWkcuFniL9a7nj01FUMkglBmgO9o%3D&spr=https&se=2022-12-13T15%3A49%3A00Z&sp=r"
+    "night-sky": "https://docserverpwaprodeus.blob.core.windows.net/e147bed9-c74d-4209-ba1b-091dbaf45467-1/resource/Assets0Images056760d5d-29d0-4863-b101-cc12df34874d.jpg?sv=2017-04-17&sr=b&sig=dt1OJtARgdfwLeLx9NmTEHzXWh7hAvbxjjCGnO%2BiBtM%3D&spr=https&se=2022-12-17T15%3A16%3A49Z&sp=r"
   },
   "OrderComponentMetadata": {
     "3c9b5b0d5a3742e08eb9efe63dee013f": 0
@@ -44,54 +54,84 @@
   "OrderComponentTemplate": {
     "3c9b5b0d5a3742e08eb9efe63dee013f": 0
   },
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "Carreras": 14,
+    "Carreras\\cr77c_carreras_statecode": 1,
+    "Carreras\\cr77c_carreras_statuscode": 0,
+    "Carreras\\default.cds_cr77c_carreras_views": 12,
+    "CustomGallerySample": 13,
+    "data": 21,
+    "ListboxSample": 15,
+    "op": 19,
+    "operaciones": 18,
+    "operaciones_2": 20,
+    "Sitios de SharePoint": 17,
+    "Sitios de SharePoint\\default.cds_sharepointsite_views": 11,
+    "Sitios de SharePoint\\sharepoint_validationstatus": 6,
+    "Sitios de SharePoint\\sharepoint_validationstatusreason": 4,
+    "Sitios de SharePoint\\sharepointsite_folderstructureentity": 7,
+    "Sitios de SharePoint\\sharepointsite_isdefault": 8,
+    "Sitios de SharePoint\\sharepointsite_isgridpresent": 10,
+    "Sitios de SharePoint\\sharepointsite_ispowerbisite": 9,
+    "Sitios de SharePoint\\sharepointsite_servicetype": 5,
+    "Sitios de SharePoint\\sharepointsite_statecode": 3,
+    "Sitios de SharePoint\\sharepointsite_statuscode": 2,
+    "Tabla1": 16
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 1,
+    "formViewer": 3,
     "label": 0,
     "text": 2
   },
   "PublishOrderIndices": {
     "App": 0,
-    "Button1": 2,
-    "Button2": 7,
-    "Button3": 4,
-    "Button4": 9,
-    "Button5": 17,
+    "Button1": 3,
+    "Button2": 8,
+    "Button3": 5,
+    "Button4": 10,
+    "Button5": 1,
+    "Button6": 18,
+    "Button6_1": 19,
+    "Button6_2": 20,
     "Component1": 0,
+    "FormViewer1": 21,
     "Label1": 0,
-    "Label10": 15,
-    "Label2": 1,
-    "Label2_1": 6,
-    "Label3": 11,
-    "Label3_1": 13,
+    "Label10": 16,
+    "Label2": 2,
+    "Label2_1": 7,
+    "Label3": 12,
+    "Label3_1": 14,
     "Screen1": 0,
-    "TextInput1": 3,
-    "TextInput2": 8,
-    "TextInput3": 12,
-    "TextInput3_1": 14,
-    "TextInput3_3": 16,
-    "TextInput4": 10,
-    "TextInput5": 5
+    "Screen3": 0,
+    "TextInput1": 4,
+    "TextInput2": 9,
+    "TextInput3": 13,
+    "TextInput3_1": 15,
+    "TextInput3_3": 17,
+    "TextInput4": 11,
+    "TextInput5": 6
   },
   "ResourcesJsonIndices": {
-    "Image-night-sky": 0
+    "Image-night-sky": 0,
+    "Image-SampleImage": 1
   },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.2106122,
+    "AnalysisLoadTime": 0.2648394,
     "ControlCount": {
       "3c9b5b0d5a3742e08eb9efe63dee013f": 1,
-      "button": 5,
+      "button": 7,
       "label": 6,
       "screen": 1,
       "text": 7
     },
-    "DeserializationLoadTime": 1.7116746,
+    "DeserializationLoadTime": 4.9288549,
     "ErrorCount": 0
   },
-  "WasLocalDatabaseReferencesEmpty": true
+  "WasLocalDatabaseReferencesEmpty": false
 }

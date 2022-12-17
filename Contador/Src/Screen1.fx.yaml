@@ -1,5 +1,6 @@
 Screen1 As screen:
     BackgroundImage: =
+    Fill: =RGBA(0, 0, 0, 1)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     Label1 As label:
@@ -32,7 +33,7 @@ Screen1 As screen:
         Text: ="-"
         Width: =70
         X: =308
-        Y: =147
+        Y: =199
         ZIndex: =3
 
     Button2 As button:
@@ -49,7 +50,7 @@ Screen1 As screen:
         Text: ="-"
         Width: =70
         X: =308
-        Y: =245
+        Y: =297
         ZIndex: =4
 
     TextInput1 As text:
@@ -71,10 +72,14 @@ Screen1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         OnChange: =Set(hipotec, Value(TextInput1.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =87
         X: =388
-        Y: =147
+        Y: =199
         ZIndex: =5
 
     TextInput2 As text:
@@ -96,10 +101,14 @@ Screen1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         OnChange: =Set(tarjetas, Value(TextInput2.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =87
         X: =388
-        Y: =245
+        Y: =297
         ZIndex: =6
 
     Button3 As button:
@@ -116,7 +125,7 @@ Screen1 As screen:
         Text: ="+"
         Width: =70
         X: =484
-        Y: =147
+        Y: =199
         ZIndex: =7
 
     Button4 As button:
@@ -133,7 +142,7 @@ Screen1 As screen:
         Text: ="+"
         Width: =70
         X: =484
-        Y: =245
+        Y: =297
         ZIndex: =8
 
     Label2 As label:
@@ -147,7 +156,7 @@ Screen1 As screen:
         Text: ="Hipotecarios"
         Width: =256
         X: =40
-        Y: =147
+        Y: =199
         ZIndex: =9
 
     Label2_1 As label:
@@ -161,7 +170,7 @@ Screen1 As screen:
         Text: ="Tarjetas"
         Width: =256
         X: =40
-        Y: =245
+        Y: =297
         ZIndex: =10
 
     TextInput3 As text:
@@ -182,10 +191,14 @@ Screen1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         OnChange: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =96
         X: =354
-        Y: =357
+        Y: =409
         ZIndex: =11
 
     Label3 As label:
@@ -199,7 +212,7 @@ Screen1 As screen:
         Text: ="Total Operaciones"
         Width: =298
         X: =40
-        Y: =353
+        Y: =405
         ZIndex: =12
 
     Label3_1 As label:
@@ -213,7 +226,7 @@ Screen1 As screen:
         Text: ="Tiempo Total"
         Width: =298
         X: =40
-        Y: =436
+        Y: =488
         ZIndex: =13
 
     TextInput3_1 As text:
@@ -234,10 +247,14 @@ Screen1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         OnChange: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =67
         X: =354
-        Y: =436
+        Y: =488
         ZIndex: =14
 
     TextInput4 As text:
@@ -260,7 +277,7 @@ Screen1 As screen:
         Size: =15
         Width: =33
         X: =554
-        Y: =263
+        Y: =315
         ZIndex: =16
 
     TextInput5 As text:
@@ -282,7 +299,7 @@ Screen1 As screen:
         Size: =21
         Width: =33
         X: =554
-        Y: =166
+        Y: =218
         ZIndex: =17
 
     TextInput3_3 As text:
@@ -304,10 +321,14 @@ Screen1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         OnChange: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =67
         X: =443
-        Y: =436
+        Y: =488
         ZIndex: =21
 
     Label10 As label:
@@ -322,24 +343,89 @@ Screen1 As screen:
             =":"
         Width: =18
         X: =423
-        Y: =436
+        Y: =488
         ZIndex: =22
 
     Button5 As button:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(102, 182, 227, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(116, 116, 116, 1)
+        Fill: =RGBA(70, 83, 92, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =43
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(hipotec, If(hipotec > 0, 0)) && Set(tarjetas, If(tarjetas > 0, 0))
+        Size: =20
+        Text: ="Reset"
+        Width: =113
+        X: =487
+        Y: =133
+        ZIndex: =23
+
+    Button6 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
         FontWeight: =FontWeight.Semibold
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(hipotec, If(hipotec > 0, 0)) && Set(tarjetas, If(tarjetas > 0, 0))
-        Size: =24
-        Text: ="Reset"
-        Width: =131
-        X: =423
-        Y: =577
-        ZIndex: =23
+        OnSelect: |-
+            =Collect(data, 
+            {fecha: Today()},
+            {hora:TextInput3_1.Text},
+            {minutos:TextInput3_3.Text}
+            )
+        Size: =19
+        Text: ="Guardar"
+        Width: =140
+        X: =40
+        Y: =586
+        ZIndex: =25
+
+    Button6_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =SaveData(data, "LocalSavedItems")
+        Size: =19
+        Text: ="Exportar"
+        Width: =162
+        X: =204
+        Y: =586
+        ZIndex: =26
+
+    Button6_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =LoadData(data, "LocalSavedItems")
+        Size: =19
+        Text: ="Ver Datos"
+        Width: =162
+        X: =385
+        Y: =586
+        ZIndex: =27
+
+    FormViewer1 As formViewer:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DataSource: =data
+        Height: =271
+        Width: =560
+        X: =40
+        Y: =716
+        ZIndex: =28
 

@@ -94,7 +94,6 @@
     "FileID": "5101ae1f-8fca-4aa1-81eb-e5013abff1b9",
     "Id": "5101ae1f-8fca-4aa1-81eb-e5013abff1b9",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "Name": "Contador",
     "OriginatingVersion": "1.326"
   },
@@ -110,6 +109,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Screen1",
+    "Screen3"
   ]
 }
