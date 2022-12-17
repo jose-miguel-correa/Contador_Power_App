@@ -153,7 +153,7 @@ Screen1 As screen:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =51
         Size: =15
-        Text: ="Hipotecario Ajuste Cursado Camp"
+        Text: ="Hipotecario Ajuste Cursado"
         Width: =276
         X: =40
         Y: =173
@@ -167,7 +167,7 @@ Screen1 As screen:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =51
         Size: =15
-        Text: ="Hipotecario Cursado Camp"
+        Text: ="Hipotecario Cursado"
         Width: =276
         X: =40
         Y: =234
@@ -178,7 +178,16 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =Value(TextInput1.Text) + Value(TextInput2.Text)
+        Default: |-
+            =Value(TextInput1.Text) + 
+            Value(TextInput2.Text) +
+            Value(TextInput2_1.Text) +
+            Value(TextInput2_2.Text) +
+            Value(TextInput2_3.Text) +
+            Value(TextInput2_4.Text) +
+            Value(TextInput2_5.Text) +
+            Value(TextInput2_6.Text) +
+            Value(TextInput2_7.Text)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -194,7 +203,7 @@ Screen1 As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =21
+        Size: =15
         Width: =96
         X: =374
         Y: =773
@@ -341,16 +350,25 @@ Screen1 As screen:
         ZIndex: =22
 
     Button5 As button:
-        Color: =RGBA(102, 182, 227, 1)
+        Color: =RGBA(255, 255, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(70, 83, 92, 1)
+        Fill: =RGBA(0, 121, 187, 1)
         FontWeight: =FontWeight.Semibold
         Height: =43
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(hipotec, If(hipotec > 0, 0)) && Set(tarjetas, If(tarjetas > 0, 0))
+        OnSelect: |-
+            =Set(hipotec, If(hipotec > 0, 0)) && 
+            Set(tarjetas, If(tarjetas > 0, 0)) &&
+            Set(reingreso, If(reingreso> 0, 0)) &&
+            Set(dual, If(dual> 0, 0)) &&
+            Set(reunion, If(reunion> 0, 0)) &&
+            Set(reunionseccion, If(reunionseccion> 0, 0)) &&
+            Set(trabajoext, If(trabajoext> 0, 0)) &&
+            Set(problemastecnicos, If(problemastecnicos> 0, 0)) &&
+            Set(analisisop, If(analisisop> 0, 0))
         Size: =20
         Text: ="Reset"
         Width: =113
@@ -378,8 +396,8 @@ Screen1 As screen:
         Size: =19
         Text: ="Guardar"
         Width: =140
-        X: =80
-        Y: =931
+        X: =67
+        Y: =932
         ZIndex: =25
 
     Button6_1 As button:
@@ -394,8 +412,8 @@ Screen1 As screen:
         Size: =19
         Text: ="Exportar"
         Width: =162
-        X: =244
-        Y: =931
+        X: =231
+        Y: =932
         ZIndex: =26
 
     Button6_2 As button:
@@ -410,8 +428,8 @@ Screen1 As screen:
         Size: =19
         Text: ="Ver Datos"
         Width: =162
-        X: =425
-        Y: =931
+        X: =412
+        Y: =932
         ZIndex: =27
 
     Button2_1 As button:
@@ -423,7 +441,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(reingreso,If(reingreso > 0, reingreso - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -436,7 +454,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =reingreso
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -449,7 +467,7 @@ Screen1 As screen:
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        OnChange: =Set(tarjetas, Value(TextInput2_1.Text))
+        OnChange: =Set(reingreso, Value(TextInput2_1.Text))
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -469,7 +487,9 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: |-
+            =Set(reingreso, reingreso
+             + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -485,7 +505,7 @@ Screen1 As screen:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =51
         Size: =15
-        Text: ="Hipotecario Reingreso Cursado Camp"
+        Text: ="Hipotecario Reingreso Cursado"
         Width: =276
         X: =40
         Y: =295
@@ -523,7 +543,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(dual,If(dual > 0, dual - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -536,7 +556,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =dual
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -549,7 +569,7 @@ Screen1 As screen:
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        OnChange: =Set(tarjetas, Value(TextInput2_2.Text))
+        OnChange: =Set(dual, Value(TextInput2_2.Text))
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -569,7 +589,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: =Set(dual, dual + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -623,7 +643,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(reunion,If(reunion > 0, reunion - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -636,7 +656,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =reunion
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -669,7 +689,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: =Set(reunion, reunion + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -723,7 +743,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(reunionseccion,If(reunionseccion > 0, reunionseccion - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -736,7 +756,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =reunionseccion
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -749,7 +769,7 @@ Screen1 As screen:
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        OnChange: =Set(tarjetas, Value(TextInput2_4.Text))
+        OnChange: =Set(reunionseccion, Value(TextInput2_4.Text))
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -769,7 +789,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: =Set(reunionseccion, reunionseccion + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -823,7 +843,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(trabajoext,If(trabajoext > 0, trabajoext - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -836,7 +856,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =trabajoext
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -849,7 +869,7 @@ Screen1 As screen:
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        OnChange: =Set(tarjetas, Value(TextInput2_5.Text))
+        OnChange: =Set(trabajoext, Value(TextInput2_5.Text))
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -869,7 +889,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: =Set(trabajoext, trabajoext + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -923,7 +943,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(problemastecnicos,If(problemastecnicos > 0, problemastecnicos - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -936,7 +956,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =problemastecnicos
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -949,7 +969,7 @@ Screen1 As screen:
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        OnChange: =Set(tarjetas, Value(TextInput2_6.Text))
+        OnChange: =Set(problemastecnicos, Value(TextInput2_6.Text))
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -969,7 +989,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: =Set(problemastecnicos, problemastecnicos + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -1023,7 +1043,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        OnSelect: =Set(analisisop,If(analisisop > 0, analisisop - 1))
         Size: =40
         Text: ="-"
         Width: =70
@@ -1036,7 +1056,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =tarjetas
+        Default: =analisisop
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1049,7 +1069,7 @@ Screen1 As screen:
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        OnChange: =Set(tarjetas, Value(TextInput2_7.Text))
+        OnChange: =Set(analisisop, Value(TextInput2_7.Text))
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -1069,7 +1089,7 @@ Screen1 As screen:
         Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(tarjetas, tarjetas + 1)
+        OnSelect: =Set(analisisop, analisisop + 1)
         Size: =40
         Text: ="+"
         Width: =70
@@ -1113,4 +1133,18 @@ Screen1 As screen:
         X: =574
         Y: =679
         ZIndex: =63
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(225, 227, 230, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(70, 83, 92, 1)
+        Height: =37
+        Size: =17
+        Text: =Text(Today(), "dd/mm/yyyy")
+        Width: =133
+        X: =40
+        Y: =127
+        ZIndex: =64
 
