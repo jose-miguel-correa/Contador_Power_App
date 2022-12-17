@@ -14,7 +14,8 @@
     "Button6_1": 24,
     "Button6_2": 25,
     "Component1": 3,
-    "FormViewer1": 26,
+    "Gallery1": 29,
+    "galleryTemplate1": 30,
     "Label1": 5,
     "Label10": 21,
     "Label2": 7,
@@ -33,7 +34,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/17/2022 03:11:37",
+  "HeaderLastSavedDateTimeUTC": "12/17/2022 03:18:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3042eae3-25a9-4d09-9042-191838fb6888": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1c18db0faead4a1cb2b91757e929db63\"",
@@ -83,7 +84,7 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 1,
-    "formViewer": 3,
+    "gallery": 3,
     "label": 0,
     "text": 2
   },
@@ -98,7 +99,8 @@
     "Button6_1": 19,
     "Button6_2": 20,
     "Component1": 0,
-    "FormViewer1": 21,
+    "Gallery1": 21,
+    "galleryTemplate1": 22,
     "Label1": 0,
     "Label10": 16,
     "Label2": 2,

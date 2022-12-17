@@ -420,12 +420,12 @@ Screen1 As screen:
         Y: =586
         ZIndex: =27
 
-    FormViewer1 As formViewer:
+    Gallery1 As gallery.variableTemplateHeightGallery:
         BorderColor: =RGBA(32, 54, 71, 1)
-        DataSource: =data
-        Height: =271
-        Width: =560
-        X: =40
-        Y: =716
+        Height: =329
+        Items: =FirstN(data, 10)
+        Layout: =Layout.Vertical
+        TemplateSize: =280
+        Y: =692
         ZIndex: =28
 
