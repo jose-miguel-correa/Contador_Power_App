@@ -3,16 +3,6 @@ Screen1 As screen:
     Fill: =RGBA(0, 0, 0, 1)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    Gallery2 As gallery.galleryHorizontal:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Height: =332
-        Items: =data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-        Width: =547
-        X: =40
-        Y: =696
-        ZIndex: =1
-
     Label1 As label:
         Align: =Align.Center
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -35,15 +25,15 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Set(hipotec, If(hipotec > 0, hipotec - 1))
         Size: =40
         Text: ="-"
         Width: =70
-        X: =308
-        Y: =199
+        X: =328
+        Y: =173
         ZIndex: =3
 
     Button2 As button:
@@ -52,15 +42,15 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
         Size: =40
         Text: ="-"
         Width: =70
-        X: =308
-        Y: =297
+        X: =328
+        Y: =234
         ZIndex: =4
 
     TextInput1 As text:
@@ -76,7 +66,7 @@ Screen1 As screen:
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
         Format: =TextFormat.Number
-        Height: =70
+        Height: =51
         HintText: ="0"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
@@ -86,10 +76,10 @@ Screen1 As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =21
+        Size: =15
         Width: =87
-        X: =388
-        Y: =199
+        X: =408
+        Y: =173
         ZIndex: =5
 
     TextInput2 As text:
@@ -105,7 +95,7 @@ Screen1 As screen:
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
         Format: =TextFormat.Number
-        Height: =70
+        Height: =51
         HintText: ="0"
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
@@ -115,10 +105,10 @@ Screen1 As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =21
+        Size: =15
         Width: =87
-        X: =388
-        Y: =297
+        X: =408
+        Y: =234
         ZIndex: =6
 
     Button3 As button:
@@ -127,15 +117,15 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Set(hipotec, hipotec + 1)
         Size: =40
         Text: ="+"
         Width: =70
-        X: =484
-        Y: =199
+        X: =504
+        Y: =173
         ZIndex: =7
 
     Button4 As button:
@@ -144,15 +134,15 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =51
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Set(tarjetas, tarjetas + 1)
         Size: =40
         Text: ="+"
         Width: =70
-        X: =484
-        Y: =297
+        X: =504
+        Y: =234
         ZIndex: =8
 
     Label2 As label:
@@ -161,12 +151,12 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 18, 107, 1)
-        Height: =70
-        Size: =21
-        Text: ="Hipotecarios"
-        Width: =256
+        Height: =51
+        Size: =15
+        Text: ="Hipotecario Ajuste Cursado Camp"
+        Width: =276
         X: =40
-        Y: =199
+        Y: =173
         ZIndex: =9
 
     Label2_1 As label:
@@ -175,12 +165,12 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 18, 107, 1)
-        Height: =70
-        Size: =21
-        Text: ="Tarjetas"
-        Width: =256
+        Height: =51
+        Size: =15
+        Text: ="Hipotecario Cursado Camp"
+        Width: =276
         X: =40
-        Y: =297
+        Y: =234
         ZIndex: =10
 
     TextInput3 As text:
@@ -196,7 +186,6 @@ Screen1 As screen:
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
         Format: =TextFormat.Number
-        Height: =63
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
@@ -207,8 +196,8 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =21
         Width: =96
-        X: =354
-        Y: =409
+        X: =374
+        Y: =773
         ZIndex: =11
 
     Label3 As label:
@@ -217,12 +206,11 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 94, 146, 1)
-        Height: =67
         Size: =21
         Text: ="Total Operaciones"
         Width: =298
-        X: =40
-        Y: =405
+        X: =60
+        Y: =769
         ZIndex: =12
 
     Label3_1 As label:
@@ -231,12 +219,11 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 94, 146, 1)
-        Height: =67
         Size: =21
         Text: ="Tiempo Total"
         Width: =298
-        X: =40
-        Y: =488
+        X: =60
+        Y: =835
         ZIndex: =13
 
     TextInput3_1 As text:
@@ -252,7 +239,6 @@ Screen1 As screen:
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
         Format: =TextFormat.Number
-        Height: =67
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
@@ -261,10 +247,10 @@ Screen1 As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =21
+        Size: =15
         Width: =67
-        X: =354
-        Y: =488
+        X: =374
+        Y: =835
         ZIndex: =14
 
     TextInput4 As text:
@@ -272,7 +258,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
-        Default: =Value(TextInput2.Text) * 3 / 60
+        Default: =Value(TextInput2.Text) * 15 / 60
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -286,8 +272,8 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =554
-        Y: =315
+        X: =574
+        Y: =242
         ZIndex: =16
 
     TextInput5 As text:
@@ -295,7 +281,7 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
-        Default: =((Value(TextInput1.Text) * 3) / 60)
+        Default: =((Value(TextInput1.Text) * 5) / 60)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -308,8 +294,8 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =21
         Width: =33
-        X: =554
-        Y: =218
+        X: =574
+        Y: =182
         ZIndex: =17
 
     TextInput3_3 As text:
@@ -318,7 +304,7 @@ Screen1 As screen:
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
         Default: |-
-            =Right(Text((Value(TextInput4.Text) + Value(TextInput5.Text)), "#.00"), 2) * 0.6
+            =Int(Right(Text((Value(TextInput4.Text) + Value(TextInput5.Text)), "#.00"), 2) * 0.6)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -326,7 +312,6 @@ Screen1 As screen:
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
         Format: =TextFormat.Number
-        Height: =67
         HoverBorderColor: =RGBA(32, 54, 71, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
@@ -335,10 +320,10 @@ Screen1 As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =21
+        Size: =15
         Width: =67
-        X: =443
-        Y: =488
+        X: =463
+        Y: =835
         ZIndex: =21
 
     Label10 As label:
@@ -347,13 +332,12 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 0, 0, 1)
-        Height: =67
         Size: =21
         Text: |-
             =":"
         Width: =18
-        X: =423
-        Y: =488
+        X: =443
+        Y: =835
         ZIndex: =22
 
     Button5 As button:
@@ -371,7 +355,7 @@ Screen1 As screen:
         Text: ="Reset"
         Width: =113
         X: =487
-        Y: =133
+        Y: =121
         ZIndex: =23
 
     Button6 As button:
@@ -380,20 +364,22 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(54, 176, 75, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Collect(data, 
-            {fecha: Today()},
-            {hora:TextInput3_1},
-            {minutos:TextInput3_3}
+            =Set( Products,
+                Table(
+                     {
+                     Fecha: Text(Today(),"dd/mm/yyy"),    'Hora': TextInput3_1,  'Minutos': TextInput3_3 
+                    }
+                    
+                )
             )
         Size: =19
         Text: ="Guardar"
         Width: =140
-        X: =40
-        Y: =586
+        X: =80
+        Y: =931
         ZIndex: =25
 
     Button6_1 As button:
@@ -402,15 +388,14 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(54, 176, 75, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =SaveData(data, "LocalSavedItems")
+        OnSelect: =SaveData(Products, "LocalSavedItems")
         Size: =19
         Text: ="Exportar"
         Width: =162
-        X: =204
-        Y: =586
+        X: =244
+        Y: =931
         ZIndex: =26
 
     Button6_2 As button:
@@ -419,14 +404,713 @@ Screen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(54, 176, 75, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =LoadData(data, "LocalSavedItems")
+        OnSelect: =LoadData(Products, "LocalSavedItems")
         Size: =19
         Text: ="Ver Datos"
         Width: =162
-        X: =385
-        Y: =586
+        X: =425
+        Y: =931
         ZIndex: =27
+
+    Button2_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =295
+        ZIndex: =29
+
+    TextInput2_1 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_1.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =295
+        ZIndex: =30
+
+    Button4_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =295
+        ZIndex: =31
+
+    Label2_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Hipotecario Reingreso Cursado Camp"
+        Width: =276
+        X: =40
+        Y: =295
+        ZIndex: =32
+
+    TextInput4_1 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_1.Text) * 10 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =303
+        ZIndex: =33
+
+    Button2_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =356
+        ZIndex: =34
+
+    TextInput2_2 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_2.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =356
+        ZIndex: =35
+
+    Button4_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =356
+        ZIndex: =36
+
+    Label2_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Campaña Dual"
+        Width: =276
+        X: =40
+        Y: =356
+        ZIndex: =37
+
+    TextInput4_2 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_2.Text) * 5 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =364
+        ZIndex: =38
+
+    Button2_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =420
+        ZIndex: =39
+
+    TextInput2_3 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_3.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =420
+        ZIndex: =40
+
+    Button4_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =420
+        ZIndex: =41
+
+    Label2_4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Reunión Informativa"
+        Width: =276
+        X: =40
+        Y: =420
+        ZIndex: =42
+
+    TextInput4_3 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_3.Text) * 15 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =428
+        ZIndex: =43
+
+    Button2_4 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =481
+        ZIndex: =44
+
+    TextInput2_4 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_4.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =481
+        ZIndex: =45
+
+    Button4_4 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =481
+        ZIndex: =46
+
+    Label2_5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Reunión Sección"
+        Width: =276
+        X: =40
+        Y: =481
+        ZIndex: =47
+
+    TextInput4_4 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_4.Text) * 60 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =489
+        ZIndex: =48
+
+    Button2_5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =547
+        ZIndex: =49
+
+    TextInput2_5 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_5.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =547
+        ZIndex: =50
+
+    Button4_5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =547
+        ZIndex: =51
+
+    Label2_6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Trabajo Extraordinario"
+        Width: =276
+        X: =40
+        Y: =547
+        ZIndex: =52
+
+    TextInput4_5 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_5.Text) * 3 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =555
+        ZIndex: =53
+
+    Button2_6 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =609
+        ZIndex: =54
+
+    TextInput2_6 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_6.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =609
+        ZIndex: =55
+
+    Button4_6 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =609
+        ZIndex: =56
+
+    Label2_7 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Problema PC_Técnicos"
+        Width: =276
+        X: =40
+        Y: =609
+        ZIndex: =57
+
+    TextInput4_6 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_6.Text) * 30 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =617
+        ZIndex: =58
+
+    Button2_7 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas,If(tarjetas > 0, tarjetas - 1))
+        Size: =40
+        Text: ="-"
+        Width: =70
+        X: =328
+        Y: =671
+        ZIndex: =59
+
+    TextInput2_7 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =tarjetas
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =51
+        HintText: ="0"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnChange: =Set(tarjetas, Value(TextInput2_7.Text))
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Width: =87
+        X: =408
+        Y: =671
+        ZIndex: =60
+
+    Button4_7 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(tarjetas, tarjetas + 1)
+        Size: =40
+        Text: ="+"
+        Width: =70
+        X: =504
+        Y: =671
+        ZIndex: =61
+
+    Label2_8 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =51
+        Size: =15
+        Text: ="Análisis Operación Media Complejidad"
+        Width: =276
+        X: =40
+        Y: =671
+        ZIndex: =62
+
+    TextInput4_7 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =Value(TextInput2_7.Text) * 3 / 60
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =34
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =15
+        Width: =33
+        X: =574
+        Y: =679
+        ZIndex: =63
 
