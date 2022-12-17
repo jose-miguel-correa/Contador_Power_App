@@ -1,6 +1,5 @@
 Screen1 As screen:
     BackgroundImage: =
-    Fill: =RGBA(0, 0, 0, 1)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     Label1 As label:
@@ -32,7 +31,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =173
         ZIndex: =3
 
@@ -49,7 +48,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =234
         ZIndex: =4
 
@@ -78,7 +77,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =173
         ZIndex: =5
 
@@ -107,7 +106,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =234
         ZIndex: =6
 
@@ -124,7 +123,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =173
         ZIndex: =7
 
@@ -141,7 +140,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =234
         ZIndex: =8
 
@@ -281,7 +280,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =242
         ZIndex: =16
 
@@ -303,7 +302,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =21
         Width: =33
-        X: =574
+        X: =603
         Y: =182
         ZIndex: =17
 
@@ -445,7 +444,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =295
         ZIndex: =29
 
@@ -474,7 +473,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =295
         ZIndex: =30
 
@@ -493,7 +492,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =295
         ZIndex: =31
 
@@ -530,7 +529,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =303
         ZIndex: =33
 
@@ -547,7 +546,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =356
         ZIndex: =34
 
@@ -576,7 +575,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =356
         ZIndex: =35
 
@@ -593,7 +592,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =356
         ZIndex: =36
 
@@ -630,7 +629,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =364
         ZIndex: =38
 
@@ -647,7 +646,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =420
         ZIndex: =39
 
@@ -676,7 +675,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =420
         ZIndex: =40
 
@@ -693,7 +692,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =420
         ZIndex: =41
 
@@ -730,7 +729,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =428
         ZIndex: =43
 
@@ -747,7 +746,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =481
         ZIndex: =44
 
@@ -776,7 +775,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =481
         ZIndex: =45
 
@@ -793,7 +792,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =481
         ZIndex: =46
 
@@ -830,7 +829,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =489
         ZIndex: =48
 
@@ -847,7 +846,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =547
         ZIndex: =49
 
@@ -876,7 +875,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =547
         ZIndex: =50
 
@@ -893,7 +892,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =547
         ZIndex: =51
 
@@ -930,7 +929,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =555
         ZIndex: =53
 
@@ -947,7 +946,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =609
         ZIndex: =54
 
@@ -976,7 +975,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =609
         ZIndex: =55
 
@@ -993,7 +992,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =609
         ZIndex: =56
 
@@ -1030,7 +1029,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =617
         ZIndex: =58
 
@@ -1047,7 +1046,7 @@ Screen1 As screen:
         Size: =40
         Text: ="-"
         Width: =70
-        X: =328
+        X: =357
         Y: =671
         ZIndex: =59
 
@@ -1076,7 +1075,7 @@ Screen1 As screen:
         RadiusTopRight: =0
         Size: =15
         Width: =87
-        X: =408
+        X: =437
         Y: =671
         ZIndex: =60
 
@@ -1093,7 +1092,7 @@ Screen1 As screen:
         Size: =40
         Text: ="+"
         Width: =70
-        X: =504
+        X: =533
         Y: =671
         ZIndex: =61
 
@@ -1130,7 +1129,7 @@ Screen1 As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         Size: =15
         Width: =33
-        X: =574
+        X: =603
         Y: =679
         ZIndex: =63
 
