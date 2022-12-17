@@ -379,7 +379,7 @@ Screen1 As screen:
             hora:TextInput3_1.Text,
             minutos:TextInput3_3.Text}
             )
-        Size: =24
+        Size: =19
         Text: ="Guardar"
         Width: =140
         X: =40
@@ -396,10 +396,36 @@ Screen1 As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =SaveData(data, "LocalSavedItems")
-        Size: =24
+        Size: =19
         Text: ="Exportar"
         Width: =162
         X: =204
         Y: =586
         ZIndex: =26
+
+    Button6_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =LoadData(data, "LocalSavedItems")
+        Size: =19
+        Text: ="Ver Datos"
+        Width: =162
+        X: =385
+        Y: =586
+        ZIndex: =27
+
+    FormViewer1 As formViewer:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DataSource: =data
+        Height: =271
+        Width: =560
+        X: =40
+        Y: =716
+        ZIndex: =28
 
