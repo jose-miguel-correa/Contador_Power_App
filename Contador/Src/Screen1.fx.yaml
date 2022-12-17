@@ -1,5 +1,6 @@
 Screen1 As screen:
     BackgroundImage: =
+    Fill: =RGBA(0, 0, 0, 1)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     Label1 As label:
@@ -346,21 +347,21 @@ Screen1 As screen:
         ZIndex: =22
 
     Button5 As button:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(102, 182, 227, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(116, 116, 116, 1)
+        Fill: =RGBA(70, 83, 92, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =43
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Set(hipotec, If(hipotec > 0, 0)) && Set(tarjetas, If(tarjetas > 0, 0))
-        Size: =24
+        Size: =20
         Text: ="Reset"
-        Width: =131
-        X: =423
-        Y: =629
+        Width: =113
+        X: =487
+        Y: =133
         ZIndex: =23
 
     Button6 As button:
@@ -373,15 +374,14 @@ Screen1 As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =Collect(datitos, 
-            {id:CountRows()+1},
-            {fecha: Today()},
-            {hora:TextInput3_1.Text},
-            {minutos:TextInput3_3.Text}
+            =Collect(data, 
+            {fecha: Today(),
+            hora:TextInput3_1.Text,
+            minutos:TextInput3_3.Text}
             )
         Size: =24
         Text: ="Guardar"
-        Width: =232
+        Width: =140
         X: =40
         Y: =586
         ZIndex: =25
@@ -395,11 +395,11 @@ Screen1 As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Collect(operaciones_2, datitos)
+        OnSelect: =SaveData(data, "LocalSavedItems")
         Size: =24
         Text: ="Exportar"
-        Width: =232
-        X: =52
-        Y: =780
+        Width: =162
+        X: =204
+        Y: =586
         ZIndex: =26
 
