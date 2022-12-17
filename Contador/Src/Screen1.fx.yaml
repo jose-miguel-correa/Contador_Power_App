@@ -240,7 +240,18 @@ Screen1 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: =Int(Value(TextInput4.Text) + Value(TextInput5.Text))
+        Default: |-
+            =Int(
+            Value(TextInput4.Text) +
+            Value(TextInput5.Text)) +
+            Value(TextInput4_1.Text) +
+            Value(TextInput4_2.Text) +
+            Value(TextInput4_3.Text) +
+            Value(TextInput4_4.Text) +
+            Value(TextInput4_5.Text) +
+            Value(TextInput4_6.Text) +
+            Value(TextInput4_7.Text)
+            )
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
