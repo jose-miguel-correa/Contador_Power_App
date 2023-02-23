@@ -409,7 +409,7 @@ Screen1 As screen:
             =Set( Products,
                 Table(
                      {
-                     Fecha: Text(Today(),"dd/mm/yyy"),    'Hora': TextInput3_1,  'Minutos': TextInput3_3 
+                     Fecha: Text(Today(),"dd/mm/yyy"),    Hora: TextInput3_1,  Minutos: TextInput3_3 
                     }
                     
                 )
